@@ -17,6 +17,7 @@ export class SapoPriceRule implements INodeType {
   description: INodeTypeDescription = {
     displayName: 'Sapo Price Rule',
     name: 'sapoPriceRule',
+		icon: 'file:../shared/sapo.svg',
     group: ['transform'],
     version: 1,
     description: 'Manage Sapo price rules and discounts',

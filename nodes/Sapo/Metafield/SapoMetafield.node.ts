@@ -33,6 +33,7 @@ export class SapoMetafield implements INodeType {
   description: INodeTypeDescription = {
     displayName: 'Sapo Metafield',
     name: 'sapoMetafield',
+		icon: 'file:../shared/sapo.svg',
     group: ['transform'],
     version: 1,
     description: 'Manage Sapo metafields (custom fields)',

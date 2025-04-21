@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-sapo",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "n8n node for Sapo ECommerce API",
   "keywords": [
     "n8n",
@@ -37,7 +37,17 @@
       "dist/credentials/SapoApi.credentials.js"
     ],
     "nodes": [
-      "dist/nodes/Sapo/Product/SapoProduct.node.js"
+      "dist/nodes/Sapo/Product/SapoProduct.node.js",
+      "dist/nodes/Sapo/Order/SapoOrder.node.js",
+      "dist/nodes/Sapo/Customer/SapoCustomer.node.js",
+      "dist/nodes/Sapo/Collection/SapoCollection.node.js",
+      "dist/nodes/Sapo/Blog/SapoBlog.node.js",
+      "dist/nodes/Sapo/Fulfillment/SapoFulfillment.node.js",
+      "dist/nodes/Sapo/Inventory/SapoInventory.node.js",
+      "dist/nodes/Sapo/Metafield/SapoMetafield.node.js",
+      "dist/nodes/Sapo/Page/SapoPage.node.js",
+      "dist/nodes/Sapo/PriceRule/SapoPriceRule.node.js",
+      "dist/nodes/Sapo/Webhook/SapoWebhook.node.js"
     ]
   },
   "devDependencies": {

@@ -17,6 +17,7 @@ export class SapoWebhook implements INodeType {
   description: INodeTypeDescription = {
     displayName: 'Sapo Webhook',
     name: 'sapoWebhook',
+		icon: 'file:../shared/sapo.svg',
     group: ['transform'],
     version: 1,
     description: 'Manage Sapo webhooks',

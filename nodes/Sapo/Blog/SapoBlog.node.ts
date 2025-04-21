@@ -17,6 +17,7 @@ export class SapoBlog implements INodeType {
   description: INodeTypeDescription = {
     displayName: 'Sapo Blog',
     name: 'sapoBlog',
+		icon: 'file:../shared/sapo.svg',
     group: ['transform'],
     version: 1,
     description: 'Manage Sapo blogs and articles',

@@ -17,6 +17,7 @@ export class SapoPage implements INodeType {
   description: INodeTypeDescription = {
     displayName: 'Sapo Page',
     name: 'sapoPage',
+		icon: 'file:../shared/sapo.svg',
     group: ['transform'],
     version: 1,
     description: 'Manage Sapo CMS pages',

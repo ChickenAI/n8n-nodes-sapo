@@ -18,6 +18,7 @@ export class SapoCustomer implements INodeType {
     displayName: 'Sapo Customer',
     name: 'sapoCustomer',
     group: ['transform'],
+		icon: 'file:../shared/sapo.svg',
     version: 1,
     description: 'Manage Sapo customers',
     defaults: {

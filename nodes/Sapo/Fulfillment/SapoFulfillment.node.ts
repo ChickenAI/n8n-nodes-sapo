@@ -17,6 +17,7 @@ export class SapoFulfillment implements INodeType {
   description: INodeTypeDescription = {
     displayName: 'Sapo Fulfillment',
     name: 'sapoFulfillment',
+		icon: 'file:../shared/sapo.svg',
     group: ['transform'],
     version: 1,
     description: 'Manage Sapo order fulfillments',

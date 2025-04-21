@@ -22,6 +22,7 @@ export class SapoInventory implements INodeType {
   description: INodeTypeDescription = {
     displayName: 'Sapo Inventory',
     name: 'sapoInventory',
+		icon: 'file:../shared/sapo.svg',
     group: ['transform'],
     version: 1,
     description: 'Manage Sapo inventory',
