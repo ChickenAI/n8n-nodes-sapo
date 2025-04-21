@@ -1,125 +1,129 @@
 # n8n-nodes-sapo
 
-This is an n8n community node for Sapo ECommerce Platform. It provides nodes to interact with various Sapo APIs.
+Đây là một node cộng đồng n8n cho Nền tảng Thương mại Điện tử Sapo. Node này cung cấp các tính năng để tương tác với các API của Sapo.
 
-[n8n](https://n8n.io/) is a [fair-code licensed](https://docs.n8n.io/reference/license/) workflow automation platform.
+[n8n](https://n8n.io/) là một nền tảng tự động hóa quy trình làm việc được [cấp phép fair-code](https://docs.n8n.io/reference/license/).
 
-[Installation](#installation)  
-[Operations](#operations)  
-[Credentials](#credentials)  
-[Resources](#resources)  
-[Version History](#version-history)  
+[Cài đặt](#installation)  
+[Các Thao Tác](#operations)  
+[Thông Tin Xác Thực](#credentials)  
+[Tài Nguyên](#resources)  
+[Lịch Sử Phiên Bản](#version-history)  
 
-## Installation
+## Cài đặt
 
-Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes/installation/) in the n8n community nodes documentation.
+Làm theo [hướng dẫn cài đặt](https://docs.n8n.io/integrations/community-nodes/installation/) trong tài liệu node cộng đồng n8n.
 
-## Operations
+## Ủng hộ 1 cốc cà phê 
+Nếu bạn thấy gói tích hợp này hữu ích, hãy ủng hộ tác giả 1 cốc cà phê nhé!
+Cám ơn các bạn đã ủng hộ!
+```
+BIEN NGO HUY PHONG
+TECHCOMBANK
+```
+<img src="bank.jpg" height="350" />
 
-The following operations are supported for each resource:
 
-### Products
-- Create product
-- Get product
-- Get multiple products
-- Update product
-- Delete product
+## Các Thao Tác
 
-### Orders
-- Create order
-- Get order
-- Get multiple orders
-- Update order
-- Delete order
-- Cancel order
-- Mark as paid
-- Mark as fulfilled
+Các thao tác sau được hỗ trợ cho mỗi tài nguyên:
 
-### Customers
-- Create customer
-- Get customer
-- Get multiple customers
-- Update customer
-- Delete customer
+### Sản Phẩm
+- Tạo sản phẩm
+- Lấy chi tiết sản phẩm
+- Lấy danh sách sản phẩm
+- Cập nhật sản phẩm
+- Xóa sản phẩm
 
-### Collections
-- Create custom collection
-- Create smart collection
-- Get collection
-- Get multiple collections
-- Update collection
-- Delete collection
-- Add/remove product
-- Set product order
+### Đơn Hàng
+- Tạo đơn hàng
+- Lấy chi tiết đơn hàng
+- Lấy danh sách đơn hàng
+- Cập nhật đơn hàng
+- Xóa đơn hàng
+- Hủy đơn hàng
+- Đánh dấu đã thanh toán
+- Đánh dấu đã thực hiện
 
-### Inventory
-- Adjust quantity
-- Get inventory level
-- Get multiple inventory items
-- Set inventory level
-- Transfer inventory
-- Get/cancel transfer
+### Khách Hàng
+- Tạo khách hàng
+- Lấy chi tiết khách hàng
+- Lấy danh sách khách hàng
+- Cập nhật khách hàng
+- Xóa khách hàng
 
-### Price Rules
-- Create price rule
-- Get price rule
-- Get multiple price rules
-- Update price rule
-- Delete price rule
+### Bộ Sưu Tập
+- Tạo bộ sưu tập tùy chỉnh
+- Tạo bộ sưu tập thông minh
+- Lấy chi tiết bộ sưu tập
+- Lấy danh sách bộ sưu tập
+- Cập nhật bộ sưu tập
+- Xóa bộ sưu tập
+- Thêm/xóa sản phẩm
+- Sắp xếp sản phẩm
 
-### Fulfillments
-- Create fulfillment
-- Get fulfillment
-- Get multiple fulfillments
-- Update tracking
-- Cancel fulfillment
-- Complete fulfillment
+### Kho Hàng
+- Điều chỉnh số lượng
+- Lấy mức tồn kho
+- Lấy danh sách tồn kho
+- Đặt mức tồn kho
+- Chuyển kho
+- Lấy/hủy chuyển kho
 
-### Metafields
-- Create metafield
-- Get metafield
-- Get multiple metafields
-- Update metafield
-- Delete metafield
-- Bulk delete metafields
-- Validate metafield
+### Quy Tắc Giá
+- Tạo quy tắc giá
+- Lấy chi tiết quy tắc giá
+- Lấy danh sách quy tắc giá
+- Cập nhật quy tắc giá
+- Xóa quy tắc giá
 
-### Pages
-- Create page
-- Get page
-- Get multiple pages
-- Update page
-- Delete page
+### Thực Hiện Đơn Hàng
+- Tạo thực hiện đơn hàng
+- Lấy chi tiết thực hiện
+- Lấy danh sách thực hiện
+- Cập nhật tracking
+- Hủy thực hiện
+- Hoàn tất thực hiện
 
-### Blogs & Articles
-- Create blog/article
-- Get blog/article 
-- Get multiple blogs/articles
-- Update blog/article
-- Delete blog/article
-- Manage comments
+### Trường Tùy Chỉnh
+- Tạo trường tùy chỉnh
+- Lấy chi tiết trường tùy chỉnh
+- Lấy danh sách trường tùy chỉnh
+- Cập nhật trường tùy chỉnh
+- Xóa trường tùy chỉnh
+- Xóa hàng loạt trường tùy chỉnh
+- Xác thực trường tùy chỉnh
 
-### Webhooks
-- Create webhook
-- Get webhook
-- Get multiple webhooks
-- Update webhook
-- Delete webhook
+### Trang
+- Tạo trang
+- Lấy chi tiết trang
+- Lấy danh sách trang
+- Cập nhật trang
+- Xóa trang
 
-## Credentials
+### Blog & Bài Viết
+- Tạo blog/bài viết
+- Lấy chi tiết blog/bài viết
+- Lấy danh sách blog/bài viết
+- Cập nhật blog/bài viết
+- Xóa blog/bài viết
+- Quản lý bình luận
 
-To use these nodes, you'll need to:
-1. Create a Sapo private app in your store admin
-2. Get the API Key, Secret Key and store URL
-3. Add those credentials in n8n credentials section
+### Webhook
+- Tạo webhook
+- Lấy chi tiết webhook
+- Lấy danh sách webhook
+- Cập nhật webhook
+- Xóa webhook
 
-## Resources
+## Thông Tin Xác Thực
 
-* [n8n community nodes documentation](https://docs.n8n.io/integrations/community-nodes/)
-* [Sapo API documentation](https://developers.sapo.vn/)
+Để sử dụng các node này, bạn cần:
+1. Tạo một ứng dụng riêng Sapo trong trang quản trị cửa hàng của bạn
+2. Lấy API Key, Secret Key và URL cửa hàng
+3. Thêm các thông tin xác thực vào phần credentials của n8n
 
-## Version History
+## Tài Nguyên
 
-### 0.1.0
-- Initial release
-- Support for core Sapo resources: products
+* [Tài liệu node cộng đồng n8n](https://docs.n8n.io/integrations/community-nodes/)
+* [Tài liệu API Sapo](https://developers.sapo.vn/)
