@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-sapo",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "n8n node for Sapo ECommerce API",
   "keywords": [
     "n8n",
