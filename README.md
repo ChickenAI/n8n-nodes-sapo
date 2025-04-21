@@ -1,46 +1,125 @@
-![Banner image](https://user-images.githubusercontent.com/10284570/173569848-c624317f-42b1-45a6-ab09-f0ea3c247648.png)
+# n8n-nodes-sapo
 
-# n8n-nodes-starter
+This is an n8n community node for Sapo ECommerce Platform. It provides nodes to interact with various Sapo APIs.
 
-This repo contains example nodes to help you get started building your own custom integrations for [n8n](n8n.io). It includes the node linter and other dependencies.
+[n8n](https://n8n.io/) is a [fair-code licensed](https://docs.n8n.io/reference/license/) workflow automation platform.
 
-To make your custom node available to the community, you must create it as an npm package, and [submit it to the npm registry](https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry).
+[Installation](#installation)  
+[Operations](#operations)  
+[Credentials](#credentials)  
+[Resources](#resources)  
+[Version History](#version-history)  
 
-## Prerequisites
+## Installation
 
-You need the following installed on your development machine:
+Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes/installation/) in the n8n community nodes documentation.
 
-* [git](https://git-scm.com/downloads)
-* Node.js and pnpm. Minimum version Node 18. You can find instructions on how to install both using nvm (Node Version Manager) for Linux, Mac, and WSL [here](https://github.com/nvm-sh/nvm). For Windows users, refer to Microsoft's guide to [Install NodeJS on Windows](https://docs.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-windows).
-* Install n8n with:
-  ```
-  pnpm install n8n -g
-  ```
-* Recommended: follow n8n's guide to [set up your development environment](https://docs.n8n.io/integrations/creating-nodes/build/node-development-environment/).
+## Operations
 
-## Using this starter
+The following operations are supported for each resource:
 
-These are the basic steps for working with the starter. For detailed guidance on creating and publishing nodes, refer to the [documentation](https://docs.n8n.io/integrations/creating-nodes/).
+### Products
+- Create product
+- Get product
+- Get multiple products
+- Update product
+- Delete product
 
-1. [Generate a new repository](https://github.com/n8n-io/n8n-nodes-starter/generate) from this template repository.
-2. Clone your new repo:
-   ```
-   git clone https://github.com/<your organization>/<your-repo-name>.git
-   ```
-3. Run `pnpm i` to install dependencies.
-4. Open the project in your editor.
-5. Browse the examples in `/nodes` and `/credentials`. Modify the examples, or replace them with your own nodes.
-6. Update the `package.json` to match your details.
-7. Run `pnpm lint` to check for errors or `pnpm lintfix` to automatically fix errors when possible.
-8. Test your node locally. Refer to [Run your node locally](https://docs.n8n.io/integrations/creating-nodes/test/run-node-locally/) for guidance.
-9. Replace this README with documentation for your node. Use the [README_TEMPLATE](README_TEMPLATE.md) to get started.
-10. Update the LICENSE file to use your details.
-11. [Publish](https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry) your package to npm.
+### Orders
+- Create order
+- Get order
+- Get multiple orders
+- Update order
+- Delete order
+- Cancel order
+- Mark as paid
+- Mark as fulfilled
 
-## More information
+### Customers
+- Create customer
+- Get customer
+- Get multiple customers
+- Update customer
+- Delete customer
 
-Refer to our [documentation on creating nodes](https://docs.n8n.io/integrations/creating-nodes/) for detailed information on building your own nodes.
+### Collections
+- Create custom collection
+- Create smart collection
+- Get collection
+- Get multiple collections
+- Update collection
+- Delete collection
+- Add/remove product
+- Set product order
 
-## License
+### Inventory
+- Adjust quantity
+- Get inventory level
+- Get multiple inventory items
+- Set inventory level
+- Transfer inventory
+- Get/cancel transfer
 
-[MIT](https://github.com/n8n-io/n8n-nodes-starter/blob/master/LICENSE.md)
+### Price Rules
+- Create price rule
+- Get price rule
+- Get multiple price rules
+- Update price rule
+- Delete price rule
+
+### Fulfillments
+- Create fulfillment
+- Get fulfillment
+- Get multiple fulfillments
+- Update tracking
+- Cancel fulfillment
+- Complete fulfillment
+
+### Metafields
+- Create metafield
+- Get metafield
+- Get multiple metafields
+- Update metafield
+- Delete metafield
+- Bulk delete metafields
+- Validate metafield
+
+### Pages
+- Create page
+- Get page
+- Get multiple pages
+- Update page
+- Delete page
+
+### Blogs & Articles
+- Create blog/article
+- Get blog/article 
+- Get multiple blogs/articles
+- Update blog/article
+- Delete blog/article
+- Manage comments
+
+### Webhooks
+- Create webhook
+- Get webhook
+- Get multiple webhooks
+- Update webhook
+- Delete webhook
+
+## Credentials
+
+To use these nodes, you'll need to:
+1. Create a Sapo private app in your store admin
+2. Get the API Key, Secret Key and store URL
+3. Add those credentials in n8n credentials section
+
+## Resources
+
+* [n8n community nodes documentation](https://docs.n8n.io/integrations/community-nodes/)
+* [Sapo API documentation](https://developers.sapo.vn/)
+
+## Version History
+
+### 0.1.0
+- Initial release
+- Support for core Sapo resources: products
